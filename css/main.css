@@ -27,11 +27,11 @@ h4 {
 }
 
 h1 {
-	font-size: 1,875rem;
+	font-size: 1, 875rem;
 }
 
 h2 {
-	font-size: 1,5rem;
+	font-size: 1, 5rem;
 }
 
 h3 {
@@ -129,11 +129,13 @@ header nav ul li a {
 }
 
 .section-two {
-	width: 100%; /*vorher 42%*/
+	width: 100%;
+	/*vorher 42%*/
 }
 
 .section-three {
-	width: 100%; /*29%*/
+	width: 100%;
+	/*29%*/
 }
 
 .bottom-section h3 {
@@ -165,4 +167,61 @@ footer span {
 	text-transform: lowercase;
 	color: #45610E;
 	font-size: .875rem;
+}
+
+
+@media all and (min-width: 768px) {
+
+	/* Tablet styles here */
+	.bottom-section .content-wrapper {
+		justify-content: space-evenly;
+	}
+
+	.section-one {
+		width: 25%
+	}
+
+	.section-two {
+		width: 40%;
+		padding: 0 30px;
+		border-left: 5px solid #EEE;
+		border-right: 5px solid #EEE;
+		/*vorher 42%*/
+	}
+
+	.section-three {
+		width: 25%;
+		/*29%*/
+	}
+}
+
+@media all and (min-width: 1200px) {
+	/* Desktop styles here */
+	body {
+		font-size: 1em;
+	}
+
+header h1 {
+  width: 30%;
+  padding: 0;
+  border-bottom: none;
+  text-align: left;
+}
+
+header nav {
+	width: 21%;
+}
+
+
+header .content-wrapper {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+header nav ul {
+	display: flex;
+	justify-content: space-between;
+}
+
 }
